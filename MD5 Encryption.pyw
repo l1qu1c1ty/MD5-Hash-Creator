@@ -43,6 +43,7 @@ root = Tk()
 root.geometry("330x330")
 root.configure(background='#314169')
 root.title("MD5 Encryption")
+root.resizable(width=False, height=False)
 
 title_lbl2 = Label(root, text="Text:",fg="white",bg="#314169")
 title_lbl2.pack()
