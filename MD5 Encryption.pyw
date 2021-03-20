@@ -1,4 +1,5 @@
 # Python Tkinter,Text to MD5 Converter GUI Tool
+# Created by Melih Can 
 from tkinter import *
 from tkinter import messagebox
 import tkinter.filedialog
