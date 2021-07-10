@@ -2,7 +2,6 @@
 # Created by Melih Can 
 from tkinter import *
 from tkinter import messagebox
-import tkinter.filedialog
 import hashlib
 
 def convert():
@@ -41,36 +40,25 @@ def save():
         
 
 root = Tk()
-root.geometry("330x330")
-root.configure(background='#314169')
+root.geometry("350x150")
+root.configure(background='orange')
 root.title("MD5 Encryption")
 root.resizable(width=False, height=False)
 
-title_lbl2 = Label(root, text="Text:",fg="white",bg="#314169")
-title_lbl2.pack()
+title_lbl2 = Label(root, text="Text:",fg="white",bg="orange").place(x=10,y=10)
         
-entry = Entry(root)
-entry.pack(ipadx=50)
+entry = Entry(root,width=40)
+entry.place(x=100,y=10)
         
-space2 = Label(text="",bg="#314169")
-space2.pack()
+title_lbl3 = Label(root, text="MD5 Hash:",fg="white",bg="orange")
+title_lbl3.place(x=10,y=50)
 
-title_lbl3 = Label(root, text="MD5 Hash:",fg="white",bg="#314169")
-title_lbl3.pack()
+entry2 = Entry(root,width=40)
+entry2.place(x=100,y=50)
 
-entry2 = Entry(root)
-entry2.pack(ipadx=50)
-
-space3 = Label(text="",bg="#314169")
-space3.pack()
-        
-button1 = Button(root, text="Encrypt",fg="blue",command=convert).pack()
-spc1 = Label(root,text="",bg="#314169").pack()
-button2 = Button(root, text="Clear",fg="gray", command = clear).pack()
-spc2 = Label(root,text="",bg="#314169").pack()
-button3 = Button(root, text="Save",fg="green",command=save).pack()
-spc3 = Label(root,text="",bg="#314169").pack()
-button4 = Button(root, text="Quit",fg="red",command=root.destroy).pack()
-spc4 = Label(root,text="",bg="#314169").pack()
+button1 = Button(root, text="Encrypt",fg="blue",command=convert).place(x=5,y=120)
+button2 = Button(root, text="Clear",fg="orange", command = clear).place(x=65,y=120)
+button3 = Button(root, text="Save",fg="green",command=save).place(x=110,y=120)
+button4 = Button(root, text="Quit",fg="red",command=root.destroy).place(x=150,y=120)
 
 mainloop()
