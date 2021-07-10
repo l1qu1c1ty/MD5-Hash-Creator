@@ -8,7 +8,7 @@ Text To Md5 Hash
 ------------------------------
 --Requirements--
 
-- Python 3.9x
+- Python 3x
 - Python idle
 
 ------------------------------
